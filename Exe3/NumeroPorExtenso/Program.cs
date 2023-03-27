@@ -30,5 +30,10 @@ switch (numero.Length)
         Dezena dezena = new Dezena();
         retorno = dezena.DezenaPorExtenso(nro);
     break;
+
+    case 3 : 
+        Centena centena = new Centena();
+        retorno = centena.CentenaPorExtenso(nro);
+    break;
 }
 Console.WriteLine(retorno);
