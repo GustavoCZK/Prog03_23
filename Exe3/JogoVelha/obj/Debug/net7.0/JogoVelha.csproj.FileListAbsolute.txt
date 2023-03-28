@@ -1,0 +1,15 @@
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\JogoVelha.csproj.AssemblyReference.cache
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\JogoVelha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\JogoVelha.AssemblyInfoInputs.cache
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\JogoVelha.AssemblyInfo.cs
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\JogoVelha.csproj.CoreCompileInputs.cache
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\bin\Debug\net7.0\JogoVelha.exe
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\bin\Debug\net7.0\JogoVelha.deps.json
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\bin\Debug\net7.0\JogoVelha.runtimeconfig.json
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\bin\Debug\net7.0\JogoVelha.dll
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\bin\Debug\net7.0\JogoVelha.pdb
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\JogoVelha.dll
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\refint\JogoVelha.dll
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\JogoVelha.pdb
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\JogoVelha.genruntimeconfig.cache
+C:\Users\402497\Desktop\Prog03_23\Exe3\JogoVelha\obj\Debug\net7.0\ref\JogoVelha.dll
