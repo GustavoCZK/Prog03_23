@@ -22,9 +22,38 @@ Console.WriteLine(
 
 // Operadores de Atribuição
 int p = 6;
+Console.WriteLine($"{p}");
 p += 3; // equivalente a p = p + 3
-p -= 3; // equivalente a p = p - 3
-p *= 3; // equivalente a p = p x 3
-p /= 3; // equivalente a p = p / 3
-
 Console.WriteLine($"+={p}");
+p -= 3; // equivalente a p = p - 3
+Console.WriteLine($"-={p}");
+p *= 3; // equivalente a p = p x 3
+Console.WriteLine($"*={p}");
+p /= 3; // equivalente a p = p / 3
+Console.WriteLine($"/={p}");
+
+// Operadores Lógicos
+
+bool a = true;
+bool b = false;
+
+WriteLine($"AND  | a     | b    ");
+WriteLine($"a    | {a & a, -5} | {a & b, -5}");
+WriteLine($"b    | {b & a, -5} | {b & b, -5}");
+WriteLine();
+WriteLine($"OR   | a     | b    ");
+WriteLine($"a    | {a | a, -5} | {a | b, -5} ");
+WriteLine($"b    | {b | a, -5} | {b | b, -5} ");
+WriteLine();
+WriteLine($"XOR  | a     | b    ");
+WriteLine($"a    | {a ^ a, -5} | {a ^ b, -5}");
+WriteLine($"b    | {b ^ a, -5} | {b ^ b, -5}");
+
+static bool FacaAlgo()
+{
+    WriteLine("Fazendo alguma coisa...");
+    return true;
+}
+WriteLine();
+WriteLine($"a & FacaAlgo() = {a & FacaAlgo()}");
+WriteLine($"b & FacaAlgo() = {b & FacaAlgo()}");
