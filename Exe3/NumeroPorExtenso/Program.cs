@@ -35,5 +35,9 @@ switch (numero.Length)
         Centena centena = new Centena();
         retorno = centena.CentenaPorExtenso(nro);
     break;
+    case 4 :
+        Milhar milhar = new Milhar();
+        retorno = milhar.MilharPorExtenso(nro);
+        break;
 }
 Console.WriteLine(retorno);
