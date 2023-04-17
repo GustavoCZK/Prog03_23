@@ -1,0 +1,15 @@
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\bin\Debug\net7.0\TrabEmpresa.exe
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\bin\Debug\net7.0\TrabEmpresa.deps.json
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\bin\Debug\net7.0\TrabEmpresa.runtimeconfig.json
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\bin\Debug\net7.0\TrabEmpresa.dll
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\bin\Debug\net7.0\TrabEmpresa.pdb
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\TrabEmpresa.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\TrabEmpresa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\TrabEmpresa.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\TrabEmpresa.AssemblyInfo.cs
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\TrabEmpresa.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\TrabEmpresa.dll
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\refint\TrabEmpresa.dll
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\TrabEmpresa.pdb
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\TrabEmpresa.genruntimeconfig.cache
+C:\Users\pc\Desktop\Prog03_23-main\Prog03_23-main\Exe3\TrabEmpresa\obj\Debug\net7.0\ref\TrabEmpresa.dll
