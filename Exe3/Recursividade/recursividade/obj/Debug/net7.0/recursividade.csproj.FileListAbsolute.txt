@@ -1,0 +1,5 @@
+C:\Users\402497\Desktop\Prog03_23\Exe3\Recursividade\recursividade\obj\Debug\net7.0\recursividade.csproj.AssemblyReference.cache
+C:\Users\402497\Desktop\Prog03_23\Exe3\Recursividade\recursividade\obj\Debug\net7.0\recursividade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\402497\Desktop\Prog03_23\Exe3\Recursividade\recursividade\obj\Debug\net7.0\recursividade.AssemblyInfoInputs.cache
+C:\Users\402497\Desktop\Prog03_23\Exe3\Recursividade\recursividade\obj\Debug\net7.0\recursividade.AssemblyInfo.cs
+C:\Users\402497\Desktop\Prog03_23\Exe3\Recursividade\recursividade\obj\Debug\net7.0\recursividade.csproj.CoreCompileInputs.cache
