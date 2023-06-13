@@ -37,17 +37,41 @@ namespace Arquivos.Views
                 case 1 :
                     Insert();
                 break;
-              
+                case 2 :
+                    List();
+                break;
+
                 default:
                 break;
             }
             
         }
 
+        private void List()
+        {
+            List<Client> listagem = clientController.List();
+            //Controlador + Acumulador + Flag
+            for(int i = 0; i < listagem.Count; i++)
+            {
+                Console.WriteLine(Print(listagem[i]));
+            }
+        }
+
+        private string Print(Client client)
+        {
+            string retorno = "";
+            retorno += $"Id: {client.Id} \n";
+            retorno += $"Nome: {client.FirstName} {client.LastName} \n";
+            retorno += "------------------------------------------- \n";
+
+            return retorno;
+        }
+
+
         private void Insert()
         {
             Client client = new Client();
-            //client.Id = 
+            client.Id = clientController.GetNextId();
 
             Console.WriteLine("\nInforme O Seu Primeiro Nome: ");
             client.FirstName = Console.ReadLine();
@@ -60,6 +84,15 @@ namespace Arquivos.Views
             
             Console.WriteLine("\nInforme O Seu Email: ");
             client.Email = Console.ReadLine();
+
+            bool retorno = clientController.Insert(client);
+
+            if(retorno == true)
+            {
+                Console.WriteLine("Cliente inserido com sucesso!");
+            }
+            else
+                Console.WriteLine("Falha ao inserir, verifique os dados!");
         }
 
     }
