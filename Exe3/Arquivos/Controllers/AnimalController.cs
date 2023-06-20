@@ -1,38 +1,33 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.IO;
 using Arquivos.Data;
 using Arquivos.Models;
 
 namespace Arquivos.Controllers
+
 {
-    public class ClientController
-    {   
+    public class AnimalController
+    {
         private string directoryName = "ReportFiles";
-        private string fileName = "Clients.txt";
-        public List<Client> List()
+        private string fileName = "Animais.txt";
+        public List<Animal> List()
         {
-            return DataSet.Clients;
+            return DataSet.Animals;
         }
 
-        public bool Insert(Client client)
+        public bool Insert(Animal animal)
         {
-            if(client == null)
+            if(animal == null)
                 return false;
             
-            if(client.Id <= 0)
+            if(animal.Id <= 0)
                 return false;
             
-            if(string.IsNullOrWhiteSpace(client.FirstName))
+            if(string.IsNullOrWhiteSpace(animal.Name))
                 return false;
             
-            DataSet.Clients.Add(client);
+            DataSet.Animals.Add(animal);
             return true;
 
         }
-
         public bool ExportToTextFile()
         {
 
@@ -40,9 +35,9 @@ namespace Arquivos.Controllers
                 Directory.CreateDirectory(directoryName);
 
             string fileContent = string.Empty;
-            foreach(Client c in DataSet.Clients)
+            foreach(Animal a in DataSet.Animals)
             {
-                fileContent += $"{c.Id} ; {c.CPF} ; {c.FirstName} ; {c.LastName} ; {c.Email}";
+                fileContent += $"{a.Id} ; {a.Name} ; {a.Tipo} ; {a.Sexo} ";
                 fileContent += "\n";
             }   
 
@@ -67,22 +62,21 @@ namespace Arquivos.Controllers
             {
                 StreamReader sr = new StreamReader($"{directoryName}\\{fileName}");
 
-                string line = string.Empty;
+            string line = string.Empty;
+            line = sr.ReadLine();
+            while(line != null)
+            {
+                Animal animal = new Animal();
+                string[] clientData = line.Split(';');
+                animal.Id = Convert.ToInt32(clientData[0]);
+                animal.Name = clientData[1];
+                animal.Tipo = clientData[2];
+                animal.Sexo = clientData[3];
+
+                DataSet.Animals.Add(animal);
+                
                 line = sr.ReadLine();
-                while(line != null)
-                {
-                    Client client = new Client();
-                    string[] clientData = line.Split(';');
-                    client.Id = Convert.ToInt32(clientData[0]);
-                    client.CPF = clientData[1];
-                    client.FirstName = clientData[2];
-                    client.LastName = clientData[3];
-                    client.Email = clientData[4];
-
-                    DataSet.Clients.Add(client);
-
-                    line = sr.ReadLine();
-                }
+            }
                 return true;
             }
             catch(Exception ex)
@@ -96,13 +90,14 @@ namespace Arquivos.Controllers
 
         }
 
+
         public int GetNextId()
         {
-            int tam = DataSet.Clients.Count;
+            int tam = DataSet.Animals.Count;
 
             if(tam > 0)
             {
-                return DataSet.Clients[tam - 1].Id + 1;
+                return DataSet.Animals[tam - 1].Id + 1;
             }
             else
                 return 1;

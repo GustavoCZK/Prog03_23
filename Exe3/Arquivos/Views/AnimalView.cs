@@ -1,31 +1,27 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Arquivos.Data;
 using Arquivos.Models;
 using Arquivos.Controllers;
+
 namespace Arquivos.Views
 {
-    public class ClientView
+    public class AnimalView
     {
-        private ClientController clientController;
+        private AnimalController animalController;
 
-        public ClientView()
+        public AnimalView()
         {
-            clientController = new ClientController();
+            animalController = new AnimalController();
             this.Init();
         }
         public void Init()
         {
             Console.WriteLine("**********************");
-            Console.WriteLine("Você está em clientes.");
+            Console.WriteLine("Você está em Animais.");
             Console.WriteLine("**********************");
             Console.WriteLine("");
-            Console.WriteLine("1 - Inserir Clientes");
-            Console.WriteLine("2 - Listar Clientes");
-            Console.WriteLine("3 - Exportar Clientes");
-            Console.WriteLine("4 - Importar Clientes");
+            Console.WriteLine("1 - Inserir Animais");
+            Console.WriteLine("2 - Listar Animais");
+            Console.WriteLine("3 - Exportar Animais");
+            Console.WriteLine("4 - Importar Animais");
             Console.WriteLine("");
 
             int option = 0;
@@ -46,7 +42,7 @@ namespace Arquivos.Views
                 case 4 :
                     Import();
                 break;
-                
+
                 default:
                 break;
             }
@@ -55,7 +51,7 @@ namespace Arquivos.Views
 
         private void List()
         {
-            List<Client> listagem = clientController.List();
+            List<Animal> listagem = animalController.List();
             //Controlador + Acumulador + Flag
             for(int i = 0; i < listagem.Count; i++)
             {
@@ -63,11 +59,11 @@ namespace Arquivos.Views
             }
         }
 
-        private string Print(Client client)
+        private string Print(Animal animal)
         {
             string retorno = "";
-            retorno += $"Id: {client.Id} \n";
-            retorno += $"Nome: {client.FirstName} {client.LastName} \n";
+            retorno += $"Id: {animal.Id} \n";
+            retorno += $"Nome: {animal.Name} \n";
             retorno += "------------------------------------------- \n";
 
             return retorno;
@@ -76,34 +72,30 @@ namespace Arquivos.Views
 
         private void Insert()
         {
-            Client client = new Client();
-            client.Id = clientController.GetNextId();
+            Animal animal = new Animal();
+            animal.Id = animalController.GetNextId();
 
-            Console.WriteLine("\nInforme O Seu Primeiro Nome: ");
-            client.FirstName = Console.ReadLine();
+            Console.WriteLine("\nInforme O Nome do Animal: ");
+            animal.Name = Console.ReadLine();
 
-            Console.WriteLine("\nInforme O Seu Sobrenome: ");
-            client.LastName = Console.ReadLine();
-
-            Console.WriteLine("\nInforme O Seu CPF: ");
-            client.CPF = Console.ReadLine();
+            Console.WriteLine("\nInforme O Tipo de Animal: ");
+            animal.Tipo = Console.ReadLine();
             
-            Console.WriteLine("\nInforme O Seu Email: ");
-            client.Email = Console.ReadLine();
+            Console.WriteLine("\nInforme O Sexo do Animal: \n");
+            animal.Sexo = Console.ReadLine();
 
-            bool retorno = clientController.Insert(client);
+            bool retorno = animalController.Insert(animal);
 
             if(retorno == true)
             {
-                Console.WriteLine("Cliente inserido com sucesso!");
+                Console.WriteLine("Animal inserido com sucesso!");
             }
             else
                 Console.WriteLine("Falha ao inserir, verifique os dados!");
         }
-
         private void Export()
         {
-            if(clientController.ExportToTextFile())
+            if(animalController.ExportToTextFile())
             {
                 Console.WriteLine("Arquivo gerado com sucesso!");
             }
@@ -112,14 +104,12 @@ namespace Arquivos.Views
         }
         private void Import()
         {
-            if(clientController.ImportFromTxtFile())
+            if(animalController.ImportFromTxtFile())
             {
                 Console.WriteLine("Dados importados com sucesso!");
             }
             else
                 Console.WriteLine("Oooops... Notthing");
         }
-        
-
     }
 }

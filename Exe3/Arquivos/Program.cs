@@ -15,6 +15,7 @@ do
     Console.WriteLine("*******************************************");
     Console.WriteLine("");
     Console.WriteLine("1 - Clientes");
+    Console.WriteLine("2 - Animais");
     
     option = Convert.ToInt32(Console.ReadLine());
 
@@ -23,6 +24,10 @@ do
         case 1 :
             Console.WriteLine("Opção Clientes");
             ClientView clientView = new ClientView();
+        break;
+        case 2:
+            Console.WriteLine("Opção Animals");
+            AnimalView animalView = new AnimalView();
         break;
     }
 

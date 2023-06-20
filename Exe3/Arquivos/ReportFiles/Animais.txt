@@ -1,0 +1,2 @@
+1 ; pepe ; gato ; macho 
+2 ; form ; papagaio ; femea 
