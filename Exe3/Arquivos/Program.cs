@@ -1,10 +1,11 @@
-﻿using Arquivos.Views;
+﻿using Arquivos.Utils;
+using Arquivos.Views;
 
 /*
 e exportação do arquivo.txt
 */
 
-
+Bootstrapper.ChargeClients();
 
 int option = 0;
 
