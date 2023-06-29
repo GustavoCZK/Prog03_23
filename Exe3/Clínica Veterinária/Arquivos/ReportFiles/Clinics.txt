@@ -1,0 +1,3 @@
+1;LoveAnimals;(79)99556-4165;Belo Horizonte, Av. Longe Pacas, 174
+2;PetShower;(56)96512-4584;Figueira, R. Perto Pacas, 9900
+3;PetNess;(12)96571-7329;Brasilia, R. Turma Animal, 851
